@@ -8,5 +8,5 @@ Create a new hugging face space
 Place the .pkl files within assets under the Flame2020 folder
 Place the pretrained model under a pretrained_models folder and place the wheel within a third_party folder within the root
 Ensure you are using a GPU
-
+To upload/remove images/videos, enter the samples folder at the root and choose the files you want to add/delete and it will re run to show the 3d mesh
 A Working version can be found here: https://huggingface.co/spaces/icampara/6166FinalWithRetrain?logs=container 
