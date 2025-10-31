@@ -1,10 +1,12 @@
----
-title: Spirkappdocker
-emoji: 📊
-colorFrom: blue
-colorTo: green
-sdk: docker
-pinned: false
----
+This is the hugging face implementation of the paper and project included within this repo: https://github.com/georgeretsi/smirk?tab=readme-ov-file.
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+#Instructions to Host On Hugging Face:
+Download this github repo as a zip
+download the wheel and pretrained model from the github releases attached
+Download the Flame 2020 model here: https://flame.is.tue.mpg.de/index.html
+Create a new hugging face space
+Place the .pkl files within assets under the Flame2020 folder
+Place the pretrained model under a pretrained_models folder and place the wheel within a third_party folder within the root
+Ensure you are using a GPU
+
+A Working version can be found here: https://huggingface.co/spaces/icampara/6166FinalWithRetrain?logs=container 
