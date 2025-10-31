@@ -25,6 +25,10 @@ RUN python3 -m pip install --no-cache-dir \
 COPY third_party /tmp/third_party
 RUN python3 -m pip install --no-cache-dir /tmp/third_party/pytorch3d-0.7.5-cp310-cp310-linux_x86_64.whl
 
+RUN mkdir -p /workspace/pretrained_models && \
+    curl -L -o /workspace/pretrained_models/SMIRK_em1.pt \
+    https://github.com/IrfanCamparaGithub/6166FInal-Retraining/releases/download/Model/SMIRK_em1.pt
+
 ENV XDG_CACHE_HOME=/workspace/.cache \
     TORCH_HOME=/workspace/.cache \
     HF_HOME=/workspace/.cache \
